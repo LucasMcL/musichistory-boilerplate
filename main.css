@@ -1,32 +1,16 @@
-/************************
-Desktop design
-*************************/
-
+/******
+MOBILE
+*******/
 .wrapper {
-	display: flex;
-	flex-flow: row;
-	justify-content: space-between;
+  display: flex;
+  flex-flow: column;
 }
 
-/* The input panel takes a quarter of the width */
-.input-panel {
-	flex: 0 25%;
+/* We tell all items to be 100% width */
+.input-panel, .main-panel {
+  flex: 1 100%;
 }
 
-.main-panel {
-	flex: 0 75%;
-}
-
-/* Same margins vertically and horizontally */
-.navbar-margin {
-	margin-bottom: 15px;
-}
-
-.input-panel-margin {
-	margin-right: 15px;
-}
-
-/* Navbar */
 .navbar__ul {
 	list-style: none;
 }
@@ -44,18 +28,23 @@ Desktop design
 	background-color: #FFB4B0;
 }
 
-/* Input Panel */
 .input-panel-styling {
 	border: solid 2px black;
 	background-color: #4DD7FA;
 }
 
-/* Main Panel */
 .main-panel-styling {
 	border: solid 2px black;
 	background-color: #FEFAC0;
 }
 
+.navbar-margin {
+	margin-bottom: 15px;
+}
+
+.input-panel-margin {
+	margin-bottom: 15px;
+}
 
 
 
@@ -64,27 +53,43 @@ Desktop design
 
 
 
+
+
+
+
+body {
+	background-color: yellow;
+}
 
 /************************
-MOBILE DESIGN
+MEDIUM SCREENS AND HIGHER
 *************************/
-@media (max-width: 750px) {
-	
-	/* All page elements in a column now with width 100% */
-	.wrapper {
-		display: flex;
-		flex-flow: row wrap;
+@media all and (min-width: 768px) {
+  body {
+  	background-color: blue;
+  }
+
+  /* Display the panels side-by-side rather than column */
+   .wrapper {
+  	flex-flow: row;
+  }
+
+	.input-panel {
+	  flex: 0 25%;
 	}
 
-	.input-panel, .main-panel {
-		flex: 1 100%;
+	.main-panel {
+	  flex: 0 75%;
 	}
 
-	.input-panel-margin {
-		margin-bottom: 15px;
-		margin-right: 0;
+	.input-panel {
+		margin-right: 15px;
 	}
 }
+
+
+
+
 
 
 
