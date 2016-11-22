@@ -1,6 +1,7 @@
 /************************
 Desktop design
 *************************/
+
 .wrapper {
 	display: flex;
 	flex-flow: row;
@@ -16,20 +17,6 @@ Desktop design
 	flex: 0 75%;
 }
 
-/* Defining the colors for the 3 main sections */
-
-.navbar-color {
-	background-color: #FFB4B0;
-}
-
-.input-panel-color {
-	background-color: #4DD7FA;
-}
-
-.main-panel-color {
-	background-color: #FEFAC0;
-}
-
 /* Same margins vertically and horizontally */
 .navbar-margin {
 	margin-bottom: 15px;
@@ -38,6 +25,45 @@ Desktop design
 .input-panel-margin {
 	margin-right: 15px;
 }
+
+/* Navbar */
+.navbar__ul {
+	list-style: none;
+}
+
+.navbar__ul li {
+	display: inline-block;
+	margin-right: 10px
+}
+
+.navbar-styling {
+	padding-bottom: 15px;
+	padding-top: 15px;
+	font-size: 1.4em;
+	border: solid 2px black;
+	background-color: #FFB4B0;
+}
+
+/* Input Panel */
+.input-panel-styling {
+	border: solid 2px black;
+	background-color: #4DD7FA;
+}
+
+/* Main Panel */
+.main-panel-styling {
+	border: solid 2px black;
+	background-color: #FEFAC0;
+}
+
+
+
+
+
+
+
+
+
 
 /************************
 MOBILE DESIGN
