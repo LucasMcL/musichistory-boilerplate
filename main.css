@@ -1,0 +1,73 @@
+/************************
+Desktop design
+*************************/
+.wrapper {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+}
+
+/* The input panel takes a quarter of the width */
+.input-panel {
+	flex: 0 25%;
+}
+
+.main-panel {
+	flex: 0 75%;
+}
+
+/* Defining the colors for the 3 main sections */
+
+.navbar-color {
+	background-color: #FFB4B0;
+}
+
+.input-panel-color {
+	background-color: #4DD7FA;
+}
+
+.main-panel-color {
+	background-color: #FEFAC0;
+}
+
+/* Same margins vertically and horizontally */
+.navbar-margin {
+	margin-bottom: 15px;
+}
+
+.input-panel-margin {
+	margin-right: 15px;
+}
+
+/************************
+MOBILE DESIGN
+*************************/
+@media (max-width: 600px) {
+	
+	/* All page elements in a column now with width 100% */
+	.wrapper {
+		display: flex;
+		flex-flow: row wrap;
+	}
+
+	.input-panel, .main-panel {
+		flex: 1 100%;
+	}
+
+	.input-panel-margin {
+		margin-bottom: 15px;
+		margin-right: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
