@@ -68,7 +68,7 @@ Desktop design
 /************************
 MOBILE DESIGN
 *************************/
-@media (max-width: 600px) {
+@media (max-width: 750px) {
 	
 	/* All page elements in a column now with width 100% */
 	.wrapper {
