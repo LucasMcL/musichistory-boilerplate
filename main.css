@@ -46,29 +46,34 @@ MOBILE
 	margin-bottom: 15px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-body {
-	background-color: yellow;
+/* Form styling */
+.form-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
+
+#slider {
+	width: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /************************
 MEDIUM SCREENS AND HIGHER
 *************************/
 @media all and (min-width: 768px) {
-  body {
-  	background-color: blue;
-  }
-
   /* Display the panels side-by-side rather than column */
    .wrapper {
   	flex-flow: row;
@@ -85,7 +90,18 @@ MEDIUM SCREENS AND HIGHER
 	.input-panel {
 		margin-right: 15px;
 	}
+
+	/* Form styling */
+	.form-wrapper p {
+		align-self: flex-start;
+	}
+
+	#slider {
+	width: 100%;
+	max-width: 200px;
 }
+}
+
 
 
 
