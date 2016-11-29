@@ -1,20 +1,32 @@
-/******
-MOBILE
-*******/
 .wrapper {
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
 }
 
-/* We tell all items to be 100% width */
-.input-panel, .main-panel {
-  flex: 1 100%;
+/* Set widths for panels */
+.input-panel {
+	flex-basis: 25%;
 }
 
+.main-panel {
+	flex-basis: 75%;
+}
+
+/* Margins for panels */
+.navbar-margin {
+	margin-bottom: 15px;
+}
+
+.input-panel-margin {
+	margin-right: 15px;
+}
+
+/* Remove bullet points from list */
 .navbar__ul {
 	list-style: none;
 }
 
+/* Add spacing between list items */
 .navbar__ul li {
 	display: inline-block;
 	margin-right: 10px
@@ -38,54 +50,24 @@ MOBILE
 	background-color: #FEFAC0;
 }
 
-.navbar-margin {
-	margin-bottom: 15px;
+/***********
+Form Styling
+************/
+.form {
+	display: flex;
+	flex-direction: column;
 }
 
-.input-panel-margin {
-	margin-bottom: 15px;
+#slider, .select {
+	width: 95%;
+	align-self: center;
+}
+
+.form label {
+	margin-bottom: 10px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-body {
-	background-color: yellow;
-}
-
-/************************
-MEDIUM SCREENS AND HIGHER
-*************************/
-@media all and (min-width: 768px) {
-  body {
-  	background-color: blue;
-  }
-
-  /* Display the panels side-by-side rather than column */
-   .wrapper {
-  	flex-flow: row;
-  }
-
-	.input-panel {
-	  flex: 0 25%;
-	}
-
-	.main-panel {
-	  flex: 0 75%;
-	}
-
-	.input-panel {
-		margin-right: 15px;
-	}
-}
 
 
 
