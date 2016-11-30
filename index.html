@@ -4,8 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Music History</title>
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <!-- <link rel="stylesheet" type="text/css" href="sandbox.css"> -->
+	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
 <body>
@@ -25,7 +24,7 @@
 			<input type="range" name="slider" id="slider">
 
 			<label>Artist: </label>
-			<select name="select" class="select">
+			<select name="select-artist" class="select">
 			  <option value="artist1">Sufjan Stevens</option> 
 			  <option value="artist2">mewithoutYou</option>
 			  <option value="artist3">The Oh Hellos</option>
@@ -34,13 +33,42 @@
 			</select>
 
 			<label>Album: </label>
-			<select name="select" class="select">
-			  <option value="song1">Sufjan Stevens</option> 
-			  <option value="song2">mewithoutYou</option>
-			  <option value="song3">The Oh Hellos</option>
-			  <option value="song4">This Will Destroy You</option>
-			  <option value="song5">Miles Davis</option>
+			<select name="select-album" class="select">
+			  <option value="album1">Carrie and Lowell</option> 
+			  <option value="album2">Age of Adz</option>
+			  <option value="album3">Brother, Sister</option> 
+			  <option value="album4">Ten Stories</option>
+			  <option value="album5">Through the Deep, Dark Valley</option>
+			  <option value="album6">Dear Wormwood</option>
+			  <option value="album7">Young Mountain</option>
+			  <option value="album8">S/T</option>
+			  <option value="album9">Kind of Blue</option>
+			  <option value="album10">Bitches Brew</option>
 			</select>
+
+			<!-- Divs around two checkbox-label pairs for flexbox reasons -->
+			<label>Genre: </label>
+			
+			<div class="checkbox-row">
+				<div><label><input type="checkbox" name="rock" value="rock"> Rock</label></div>
+				<div><label><input type="checkbox" name="classical" value="classical"> Classical</label></div>
+			</div>
+		
+			<div class="checkbox-row">
+				<div><label><input type="checkbox" name="pop" value="Pop"> Pop</label></div>
+				<div><label><input type="checkbox" name="jazz" value="Jazz"> Jazz</label></div>
+			</div>
+		
+			<div class="checkbox-row">
+				<div><label><input type="checkbox" name="blues" value="Blues"> Blues</label></div>
+				<div><label><input type="checkbox" name="hip-hop" value="Hip Hop"> Hip Hop</label></div>
+			</div>
+
+			<button type="submit" class="filter-button">Filter</button>
+			
+
+
+
 		</form>
 	</div>
 
@@ -53,7 +81,6 @@
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	</div>
 </div>
-
 </body>
 </html>
 
