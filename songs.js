@@ -48,6 +48,11 @@ var mainPanelEl = document.getElementById('main-panel')
 // <span>Album</span> | <span>Genre</span></p>
 
 
+// Consider replacing this with string templating
+// Single ` ` with templates inside
+
+// ` <div clas='song-block'>
+//     <h1>${currentSong.title}</h1>`
 for (var i = 0; i < data.length; i++) {
   var h2 = document.createElement("h2")
   var h2Text = document.createTextNode(data[i].song)
