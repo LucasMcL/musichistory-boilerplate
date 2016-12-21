@@ -1,3 +1,22 @@
+/*
+To do: match height of input panel and main panel
+	Adjust link styling in navbar
+*/
+
+/***********
+Hidden / Shown
+************/
+
+.hidden {
+	display: none;
+}
+
+
+
+/***********
+Main Stuff
+************/
+
 .wrapper {
   display: flex;
   flex-flow: row;
@@ -111,7 +130,9 @@ Main panel styling
 	margin-left: 15px;
 }
 
-
+/*****************
+Add Music Styling
+*****************/
 
 
 
