@@ -135,6 +135,10 @@ Main panel styling
 	margin-right: 15px;
 }
 
+.main-panel .delete-btn {
+	float: right;
+}
+
 /*****************
 Add Music Styling
 *****************/

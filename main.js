@@ -49,6 +49,10 @@ $('input[name=add]').click( function() {
   $('.main-panel').append(p)
 })
 
+$('.main-panel .delete-btn').click( function(clickEvt) {
+  $(clickEvt.target.parentNode).remove()
+})
+
 
 
 
