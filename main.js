@@ -1,14 +1,23 @@
 // Add event listeners to navbar links
+
+// Changes which sections are shown/hidden
+// Changes which navbar link is targeted w/class viewing
 $('#link__list-music').click( function() {
   $('section').addClass('hidden')
   $('section.list-music').removeClass('hidden')
-  $('#link__list-music').addClass('visible')
+
+  $('[id^=link__]').removeClass('viewing')
+  $('#link__list-music').addClass('viewing')
 })
 
+// Changes which sections are shown/hidden
+// Changes which navbar link is targeted w/class viewing
 $('#link__add-music').click( function() {
   $('section').addClass('hidden')
   $('section.add-music').removeClass('hidden')
-  $('#link__add-music').addClass('visible')
+
+  $('[id^=link__]').removeClass('viewing')
+  $('#link__add-music').addClass('viewing')
 })
 
 // When the add button is clicked

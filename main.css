@@ -12,8 +12,10 @@ Hidden / Shown
 	display: none;
 }
 
-.visible {
-	display: block;
+/* Changes styling of links in nav bar */
+.viewing {
+	color: black;
+	text-decoration: none;
 }
 
 /***********
@@ -32,11 +34,12 @@ body {
 /* Set widths for panels */
 .input-panel {
 	flex-basis: 25%;
-	max-height: 375px; /*wont stretch too far down*/
 }
 
 .main-panel {
 	flex-basis: 75%;
+	max-height: 1000px;
+	overflow: scroll;
 }
 
 /* Margins for panels */
@@ -87,6 +90,8 @@ Form Styling
 .form {
 	display: flex;
 	flex-direction: column;
+	height: 50%;
+	justify-content: space-around;
 }
 
 #slider, .select, .filter-button{
@@ -102,6 +107,7 @@ Form Styling
 
 .filter-button {
 	font-size: 1em;
+	margin-top: 30px;
 }
 
 .checkbox-row div {
