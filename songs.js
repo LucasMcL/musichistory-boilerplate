@@ -1,15 +1,3 @@
-//////////////////////////////////////////////////////
-/////////           OBJECTIVES             ///////////
-//////////////////////////////////////////////////////
-
-// Use regular expressions to replace bad characters
-// Use regular expressions to replace > with -
-// Add song to beggining and end
-// Link to main content area
-  // Loop through array, pull out artist, song, and album info
-  // Dynamically generate html from that
-
-
 var songs = [];
 
 songs[songs.length] = "Legs > by Z*ZTop on the album Eliminator";
@@ -43,6 +31,7 @@ for(var i = 0; i < songs.length; i++) {
     })
 }
 
+// Initialize page with artist, album, and song data
 var mainPanelEl = document.getElementById('main-panel')
 for (var i = 0; i < data.length; i++) {
   var h2 = document.createElement("h2")
