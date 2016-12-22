@@ -33,16 +33,21 @@ for(var i = 0; i < songs.length; i++) {
 
 // Initialize page with artist, album, and song data
 var mainPanelEl = document.getElementById('main-panel')
+// for (var i = 0; i < data.length; i++) {
+//   var h2 = document.createElement("h2")
+//   var h2Text = document.createTextNode(data[i].song)
+//   h2.appendChild(h2Text)
+//   mainPanelEl.appendChild(h2)
+//   var p = document.createElement("p")
+//   mainPanelEl.appendChild(p)
+//   p.innerHTML = "<span>" + data[i].artist + "</span>" +
+//                 "<span>|</span>" +
+//                 "<span>" + data[i].album + "</span>" +
+//                 "<span>|</span>" +
+//                 "<span>" + "Genre" + "</span>";
+// }
 for (var i = 0; i < data.length; i++) {
-  var h2 = document.createElement("h2")
-  var h2Text = document.createTextNode(data[i].song)
-  h2.appendChild(h2Text)
-  mainPanelEl.appendChild(h2)
-  var p = document.createElement("p")
-  mainPanelEl.appendChild(p)
-  p.innerHTML = "<span>" + data[i].artist + "</span> | " +
-                "<span>" + data[i].album + "</span> | " +
-                "<span>" + "Genre" + "</span>";
+
 }
 
 

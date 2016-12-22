@@ -38,6 +38,7 @@ body {
 
 .main-panel {
 	flex-basis: 75%;
+	min-height: 500px;
 	max-height: 1000px;
 	overflow: scroll;
 }
@@ -90,7 +91,7 @@ Form Styling
 .form {
 	display: flex;
 	flex-direction: column;
-	height: 50%;
+	height: 500px;
 	justify-content: space-around;
 }
 
