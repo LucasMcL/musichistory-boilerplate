@@ -1,3 +1,27 @@
+/*
+To do: match height of input panel and main panel
+	Adjust link styling in navbar
+	Fix height bug of add button in add song section
+*/
+
+/***********
+Hidden / Shown
+************/
+
+.hidden {
+	display: none;
+}
+
+/* Changes styling of links in nav bar */
+.viewing {
+	color: black;
+	text-decoration: none;
+}
+
+/***********
+Main Stuff
+************/
+
 .wrapper {
   display: flex;
   flex-flow: row;
@@ -10,11 +34,12 @@ body {
 /* Set widths for panels */
 .input-panel {
 	flex-basis: 25%;
-	max-height: 375px; /*wont stretch too far down*/
 }
 
 .main-panel {
 	flex-basis: 75%;
+	max-height: 1000px;
+	overflow: scroll;
 }
 
 /* Margins for panels */
@@ -65,6 +90,8 @@ Form Styling
 .form {
 	display: flex;
 	flex-direction: column;
+	height: 50%;
+	justify-content: space-around;
 }
 
 #slider, .select, .filter-button{
@@ -80,6 +107,7 @@ Form Styling
 
 .filter-button {
 	font-size: 1em;
+	margin-top: 30px;
 }
 
 .checkbox-row div {
@@ -111,9 +139,32 @@ Main panel styling
 	margin-left: 15px;
 }
 
+/*****************
+Add Music Styling
+*****************/
+.form__add-music {
+	width: 400px;
+	margin: 0 auto; /*Centers horizontally*/
+	margin-top: 50px;
+	border: 1px solid black;
+	border-radius: 5px;
+	font-size: 2rem;
+	padding: 20px;
+}
 
+.form__add-music input {
+	width: 95%;
+	height: 35px;
+	font-size: 1.5rem;
+	margin-bottom: 20px;
+	display: block
+}
 
-
+.form__add-music input[type="button"] {
+	font-size: 5rem;
+	height: 100px;
+	margin: 0 auto;
+}
 
 
 

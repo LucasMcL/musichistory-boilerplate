@@ -1,15 +1,3 @@
-//////////////////////////////////////////////////////
-/////////           OBJECTIVES             ///////////
-//////////////////////////////////////////////////////
-
-// Use regular expressions to replace bad characters
-// Use regular expressions to replace > with -
-// Add song to beggining and end
-// Link to main content area
-  // Loop through array, pull out artist, song, and album info
-  // Dynamically generate html from that
-
-
 var songs = [];
 
 songs[songs.length] = "Legs > by Z*ZTop on the album Eliminator";
@@ -43,16 +31,8 @@ for(var i = 0; i < songs.length; i++) {
     })
 }
 
+// Initialize page with artist, album, and song data
 var mainPanelEl = document.getElementById('main-panel')
-// <h1>Song Name</h1><p><span>Artist</span> |
-// <span>Album</span> | <span>Genre</span></p>
-
-
-// Consider replacing this with string templating
-// Single ` ` with templates inside
-
-// ` <div clas='song-block'>
-//     <h1>${currentSong.title}</h1>`
 for (var i = 0; i < data.length; i++) {
   var h2 = document.createElement("h2")
   var h2Text = document.createTextNode(data[i].song)
@@ -64,6 +44,7 @@ for (var i = 0; i < data.length; i++) {
                 "<span>" + data[i].album + "</span> | " +
                 "<span>" + "Genre" + "</span>";
 }
+
 
 
 
