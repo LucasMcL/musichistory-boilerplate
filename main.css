@@ -1,6 +1,7 @@
 /*
 To do: match height of input panel and main panel
 	Adjust link styling in navbar
+	Fix height bug of add button in add song section
 */
 
 /***********
@@ -11,7 +12,9 @@ Hidden / Shown
 	display: none;
 }
 
-
+.visible {
+	display: block;
+}
 
 /***********
 Main Stuff
@@ -133,8 +136,29 @@ Main panel styling
 /*****************
 Add Music Styling
 *****************/
+.form__add-music {
+	width: 400px;
+	margin: 0 auto; /*Centers horizontally*/
+	margin-top: 50px;
+	border: 1px solid black;
+	border-radius: 5px;
+	font-size: 2rem;
+	padding: 20px;
+}
 
+.form__add-music input {
+	width: 95%;
+	height: 35px;
+	font-size: 1.5rem;
+	margin-bottom: 20px;
+	display: block
+}
 
+.form__add-music input[type="button"] {
+	font-size: 5rem;
+	height: 100px;
+	margin: 0 auto;
+}
 
 
 

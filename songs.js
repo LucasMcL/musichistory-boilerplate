@@ -56,16 +56,7 @@ for (var i = 0; i < data.length; i++) {
                 "<span>" + "Genre" + "</span>";
 }
 
-// Add event listeners to navbar links
-$('#link__list-music').click( function() {
-  $('section').addClass('hidden')
-  $('#link__list-music').removeClass('hidden')
-})
 
-$('#link__add-music').click( function() {
-  $('section').addClass('hidden')
-  $('#link__add-music').removeClass('hidden')
-})
 
 
 
