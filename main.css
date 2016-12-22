@@ -135,11 +135,6 @@ Main panel styling
 	margin-right: 15px;
 }
 
-/* Applies left margin to all but first span */
-.main-panel-styling span:nth-child(n+2) {
-	margin-left: 15px;
-}
-
 /*****************
 Add Music Styling
 *****************/
