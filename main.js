@@ -49,6 +49,16 @@ $('input[name=add]').click( function() {
   $('.main-panel').append(p)
 })
 
+// Delete buttons appear on hover
+$('.main-panel div').mouseover( function() {
+  $(this).find('.delete-btn').removeClass('hidden')
+})
+
+$('.main-panel div').mouseleave( function() {
+  $(this).find('.delete-btn').addClass('hidden')
+})
+
+// Removes parent div when delete button is clicked
 $('.main-panel .delete-btn').click( function(clickEvt) {
   $(clickEvt.target.parentNode).remove()
 })

@@ -42,7 +42,7 @@ for (var i = 0; i < data.length; i++) {
   div.append(`<span>${data[i].album}</span>`)
   div.append('<span>|</span>')
   div.append(`<span>Genre</span>`)
-  div.append('<input type="button" value="delete" name="Delete" class="delete-btn">')
+  div.append('<input type="button" value="delete" name="Delete" class="delete-btn hidden">')
 
   $('#main-panel').append(div)
 

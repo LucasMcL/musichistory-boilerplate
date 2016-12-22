@@ -139,6 +139,10 @@ Main panel styling
 	float: right;
 }
 
+.main-panel .hidden {
+	display: none;
+}
+
 /*****************
 Add Music Styling
 *****************/
