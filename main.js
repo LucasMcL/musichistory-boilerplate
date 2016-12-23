@@ -1,6 +1,49 @@
-// To do: add event listener to newly created song info
-  // for delete button upon div creation
+// To do: disable more songs button after clicked
+  // Delete buttons working
 
+// This jQuery function gets the JSON data and populates the page
+// Does not store the data in a global variable
+var listCounter = 0
+$.getJSON( "data/songs.json", function(songs) {
+  for (var i = 0; i < songs.data.length; i++) {
+    var div = $(`<div id=${listCounter}></div>`)
+    div.append(`<h2>${songs.data[i].song}</h2>`)
+    div.append(`<span>${songs.data[i].artist}</span>`)
+    div.append('<span>|</span>')
+    div.append(`<span>${songs.data[i].album}</span>`)
+    div.append('<span>|</span>')
+    div.append(`<span>Genre</span>`)
+    div.append('<input type="button" value="delete" name="Delete" class="delete-btn hidden">')
+
+    $('#main-panel').append(div)
+
+    listCounter++
+
+  }
+  // Create more songs button and add event listener to it
+  $('#main-panel').append('<input type="button" value="more-songs" name="More songs" id="more-songs-btn">')
+  $('#more-songs-btn').click( addMoreSongs )
+})
+
+function addMoreSongs() {
+  $.getJSON('data/more-songs.json', function(songs) {
+    for (var i = 0; i < songs.data.length; i++) {
+      var div = $(`<div id=${listCounter}></div>`)
+      div.append(`<h2>${songs.data[i].song}</h2>`)
+      div.append(`<span>${songs.data[i].artist}</span>`)
+      div.append('<span>|</span>')
+      div.append(`<span>${songs.data[i].album}</span>`)
+      div.append('<span>|</span>')
+      div.append(`<span>Genre</span>`)
+      div.append('<input type="button" value="delete" name="Delete" class="delete-btn hidden">')
+
+      div.appendTo($('#main-panel div').last())
+
+      listCounter++
+    }
+  })
+  console.log('addMoreSongs just ran')
+}
 // Add event listeners to navbar links
 
 // Changes which sections are shown/hidden
