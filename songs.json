@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "song": "Elephant in the Dock",
+      "artist": "mewithoutYou",
+      "album": "Ten Stories"
+    },
+    {
+      "song": "Legs",
+      "artist": "ZZTop",
+      "album": "Eliminator"
+    },
+    {
+      "song": "The Logical Song",
+      "artist": "Supertramp",
+      "album": "Breakfast in America"
+    },
+    {
+      "song": "Another Brick in the Wall",
+      "artist": "Pink Floyd",
+      "album": "The Wall"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 /*
-To do: match height of input panel and main panel
-	Adjust link styling in navbar
+To do:
 	Fix height bug of add button in add song section
+	Make nav position fixed
 */
 
 /***********
@@ -30,6 +30,7 @@ Main Stuff
 body {
 	font-size: 1.25em;
 }
+
 
 /* Set widths for panels */
 .input-panel {
