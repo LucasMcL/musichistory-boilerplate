@@ -37,12 +37,12 @@ function addMoreSongs() {
       div.append(`<span>Genre</span>`)
       div.append('<input type="button" value="delete" name="Delete" class="delete-btn hidden">')
 
-      div.appendTo($('#main-panel div').last())
+      div.insertAfter($('#main-panel div').last())
 
       listCounter++
     }
   })
-  console.log('addMoreSongs just ran')
+  $('#more-songs-btn').attr('disabled', 'disabled')
 }
 // Add event listeners to navbar links
 
