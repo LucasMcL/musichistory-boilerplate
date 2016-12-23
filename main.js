@@ -1,3 +1,6 @@
+// To do: add event listener to newly created song info
+  // for delete button upon div creation
+
 // Add event listeners to navbar links
 
 // Changes which sections are shown/hidden
@@ -35,18 +38,29 @@ $('input[name=add]').click( function() {
   $('input[name=artist]').val('')
   $('input[name=album]').val('')
 
-  // Create h2 and p with song info
-  var h2 = $(`<h2>${newInfo.song}</h2>`)
-  var p = $('<p></p>')
-  p.append(`<span>${newInfo.artist}</span>`)
-  p.append(`<span class="bar">|</span>`)
-  p.append(`<span>${newInfo.artist}</span>`)
-  p.append(`<span class="bar">|</span>`)
-  p.append(`<span>Genre</span>`)
+  // Create div with song info
+  var div = $(`<div id=${listCounter}></div>`)
+  div.append(`<h2>${newInfo.song}</h2>`)
+  div.append(`<span>${newInfo.artist}</span>`)
+  div.append('<span>|</span>')
+  div.append(`<span>${newInfo.album}</span>`)
+  div.append('<span>|</span>')
+  div.append(`<span>Genre</span>`)
+  div.append('<input type="button" value="delete" name="Delete" class="delete-btn hidden">')
 
-  // Insert into main panel
-  $('.main-panel').append(h2)
-  $('.main-panel').append(p)
+  listCounter++
+
+  // Insert div into DOM
+  $('#main-panel').append(div)
+
+  // Add event listeners to just added div
+  $('#main-panel div').last().mouseover( function() {
+    $(this).find('.delete-btn').removeClass('hidden')
+  })
+
+  $('#main-panel div').last().mouseleave( function() {
+    $(this).find('.delete-btn').addClass('hidden')
+  })
 })
 
 // Delete buttons appear on hover
